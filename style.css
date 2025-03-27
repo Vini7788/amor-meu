@@ -1,0 +1,201 @@
+/* Resetando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da Página */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Barra de Navegação */
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    color: #ff7b9c;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ff7b9c;
+}
+
+/* Seção Hero */
+.hero {
+    background-image: url('imagens/flores.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ff7b9c;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #ff7b9c;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e66890;
+}
+
+/* Seção Sobre Nós */
+.section-about {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #ff7b9c;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Seção Memórias */
+.section-memories {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.memories-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.memory-item {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.memory-item:hover {
+    transform: scale(1.05);
+}
+
+/* Seção Mensagem */
+.section-message {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-message .section-title {
+    font-size: 32px;
+    color: #ff7b9c;
+    margin-bottom: 20px;
+}
+
+.section-message .section-description {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+
+    .memory-item {
+        width: 100%;
+    }
+}
