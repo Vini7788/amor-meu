@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Acesso ao Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f7f7f7;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bem-vindo! Entre para acessar o site</h2>
+    <form id="login-form">
+        <input type="password" id="password" placeholder="Digite a senha" required />
+        <br />
+        <button type="submit">Entrar</button>
+    </form>
+
+    <script>
+        const validPassword = "suaSenha"; // Substitua por sua senha
+
+        const form = document.getElementById("login-form");
+        const passwordInput = document.getElementById("password");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const enteredPassword = passwordInput.value;
+
+            if (enteredPassword === validPassword) {
+                window.location.href = "index.html"; // Redireciona para o index.html após login correto
+            } else {
+                alert("Senha incorreta! Tente novamente.");
+            }
+        });
+    </script>
+</body>
+</html>
